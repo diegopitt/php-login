@@ -1,7 +1,5 @@
-<div class="content">
+<div class="container">
     <h1>Change your email adress</h1>
-
-    <!-- echo out the system feedback (error and success messages) -->
     <?php $this->renderFeedbackMessages(); ?>
 
     <form action="<?php echo URL; ?>login/edituseremail_action" method="post">

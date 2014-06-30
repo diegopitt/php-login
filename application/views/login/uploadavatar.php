@@ -1,7 +1,5 @@
-<div class="content">
+<div class="container">
     <h1>Upload an avatar</h1>
-
-    <!-- echo out the system feedback (error and success messages) -->
     <?php $this->renderFeedbackMessages(); ?>
 
     <form action="<?php echo URL; ?>login/uploadavatar_action" method="post" enctype="multipart/form-data">

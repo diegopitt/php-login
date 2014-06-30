@@ -20,7 +20,7 @@ ini_set("display_errors", 1);
  * if you are using a (different) port, then put this in here, like http://mydomain:8888/subfolder/
  * Note: The trailing slash is important!
  */
-define('URL', 'http://localhost/php-login/');
+define('URL', 'http://localhost:1234/Version_2/');
 
 /**
  * Configuration for: Folders
@@ -39,7 +39,7 @@ define('AVATAR_PATH', 'public/avatars/');
  * Self-explaining. The FACEBOOK_LOGIN_PATH is the controller-action where the user is redirected to after getting
  * authenticated via Facebook. Leave it like that unless you know exactly what you do.
  */
-define('FACEBOOK_LOGIN', false);
+define('FACEBOOK_LOGIN', true);
 define('FACEBOOK_LOGIN_APP_ID', 'XXX');
 define('FACEBOOK_LOGIN_APP_SECRET', 'XXX');
 define('FACEBOOK_LOGIN_PATH', 'login/loginWithFacebook');
@@ -53,8 +53,8 @@ define('FACEBOOK_REGISTER_PATH', 'login/registerWithFacebook');
  * AVATAR_DEFAULT_IMAGE is the default image in public/avatars/
  */
 define('USE_GRAVATAR', false);
-define('AVATAR_SIZE', 44);
-define('AVATAR_JPEG_QUALITY', 85);
+define('AVATAR_SIZE', 32);
+define('AVATAR_JPEG_QUALITY', 100);
 define('AVATAR_DEFAULT_IMAGE', 'default.jpg');
 
 /**
@@ -91,10 +91,10 @@ define('COOKIE_DOMAIN', '.localhost');
  * define('DB_PASS', 'xxx');
  */
 define('DB_TYPE', 'mysql');
-define('DB_HOST', '127.0.0.1');
+define('DB_HOST', 'localhost:3306');
 define('DB_NAME', 'login');
 define('DB_USER', 'root');
-define('DB_PASS', 'mysql');
+define('DB_PASS', '');
 
 /**
  * Configuration for: Hashing strength

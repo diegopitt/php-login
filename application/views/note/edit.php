@@ -1,7 +1,5 @@
-<div class="content">
+<div class="container">
     <h1>Edit a note</h1>
-
-    <!-- echo out the system feedback (error and success messages) -->
     <?php $this->renderFeedbackMessages(); ?>
 
     <?php if ($this->note) { ?>

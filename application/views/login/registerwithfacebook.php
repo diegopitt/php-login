@@ -1,6 +1,3 @@
-<div class="content">
-
-    <!-- echo out the system feedback (error and success messages) -->
+<div class="container">
     <?php $this->renderFeedbackMessages(); ?>
-
 </div>

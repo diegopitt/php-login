@@ -1,7 +1,13 @@
-    <div class="footer">
-        <!-- echo out the content of the SESSION via KINT, a Composer-loaded much better version of var_dump -->
-        <!-- KINT can be used with the simple function d() -->
-        <?php d($_SESSION); ?>
+    
+<div id="push"></div>
+</div> <!-- warp -->
+    <div id="footer">
+      <div class="container">
+        <p></p>
+      </div>
     </div>
+
+    <script type="text/javascript" src="<?php echo URL; ?>public/js/bootstrap.min.js"></script>
+
 </body>
 </html>

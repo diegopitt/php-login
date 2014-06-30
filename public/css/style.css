@@ -1,8 +1,32 @@
 html, body {
     padding: 0;
     margin: 0;
+	height:100%;
+}
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* Negative indent footer by it's height */
+	margin: 0 auto -40px;
+}
+#push,
+#footer {
+height: 40px;
+}
+#footer {
+background-color: #292929;
 }
 
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+#footer {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+}
 body {
     background-color: #fff;
     font-family: Arial;
@@ -248,6 +272,7 @@ ul#menu li:hover ul.sub-menu {
 }
 
 .header .avatar {
+	
     float: left;
     width: 44px;
     height: 44px;
@@ -426,4 +451,5 @@ table.overview-table td.avatar {
 .avatar img {
     width: 44px;
     height: 44px;
+	margin-top:8px;
 }

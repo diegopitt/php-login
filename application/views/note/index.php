@@ -1,8 +1,6 @@
-<div class="content">
+<div class="container">
     <h1>Create new note</h1>
     <h3>"Notes" are just an example of how to create, show (read), edit (update) and delete things. CRUD, you know...</h3>
-
-    <!-- echo out the system feedback (error and success messages) -->
     <?php $this->renderFeedbackMessages(); ?>
 
     <form method="post" action="<?php echo URL;?>note/create">

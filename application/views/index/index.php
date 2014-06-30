@@ -1,7 +1,5 @@
-<div class="content">
+<div class="container">
     <h1>Index</h1>
-
-    <!-- echo out the system feedback (error and success messages) -->
     <?php $this->renderFeedbackMessages(); ?>
 
     <p>

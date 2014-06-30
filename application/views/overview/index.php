@@ -1,44 +1,29 @@
-<div class="content">
-    <h1>Overview</h1>
-
-    <!-- echo out the system feedback (error and success messages) -->
-    <?php $this->renderFeedbackMessages(); ?>
-
-    <p>
-        This controller/action/view shows a list of all users in the system.
-        You could use the underlaying code to build things that use profile information
-        of one or multiple/all users.
-    </p>
-
-    <p>
-        <span style="color: red;">NOTE: be sure NOT to show email addresses of users in a real app.</span>
-        <table class="overview-table">
-        <?php
-
-        foreach ($this->users as $user) {
-
-            if ($user->user_active == 0) {
-                echo '<tr class="inactive">';
-            } else {
-                echo '<tr class="active">';
-            }
-
-            echo '<td>'.$user->user_id.'</td>';
-            echo '<td class="avatar">';
-
-            if (isset($user->user_avatar_link)) {
-                echo '<img src="'.$user->user_avatar_link.'" />';
-            }
-
-            echo '</td>';
-            echo '<td>'.$user->user_name.'</td>';
-            echo '<td>'.$user->user_email.'</td>';
-            echo '<td>Active: '.$user->user_active.'</td>';
-            echo '<td><a href="'.URL.'overview/showuserprofile/'.$user->user_id.'">Show user\'s profile</a></td>';
-            echo "</tr>";
-        }
-
-        ?>
-        </table>
-    </p>
+<div class="container">
+    <div class="jumbotron">
+        <p>1 + 2 = {{ 1 + 2 }}</p>
+        <h1>Testing ...</h1>
+        <p class="lead">MVC framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
+        <p><a href="d" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+    </div>
 </div>
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+    </div>
+</div>
+
